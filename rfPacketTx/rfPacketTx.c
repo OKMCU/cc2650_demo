@@ -41,6 +41,8 @@
 /* Drivers */
 #include <ti/drivers/rf/RF.h>
 #include <ti/drivers/PIN.h>
+#include <ti/drivers/GPIO.h>
+#include <ti/drivers/PWM.h>
 
 /* Board Header files */
 #include "Board.h"
@@ -49,22 +51,9 @@
 
 /* Pin driver handles */
 static PIN_Handle buttonPinHandle;
-static PIN_Handle ledPinHandle;
 
 /* Global memory storage for a PIN_Config table */
 static PIN_State buttonPinState;
-static PIN_State ledPinState;
-
-/*
- * Initial LED pin configuration table
- *   - LEDs Board_LED0 is on.
- *   - LEDs Board_LED1 is off.
- */
-PIN_Config ledPinTable[] = {
-    Board_LED0 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL | PIN_DRVSTR_MAX,
-    Board_LED1 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL | PIN_DRVSTR_MAX,
-    PIN_TERMINATE
-};
 
 /*
  * Application button pin configuration table:
@@ -80,6 +69,8 @@ PIN_Config buttonPinTable[] = {
 #define TX_TASK_STACK_SIZE 1024
 #define TX_TASK_PRIORITY   2
 
+#define LED_TASK_STACK_SIZE 1024
+
 /* Packet TX Configuration */
 #define PAYLOAD_LENGTH      30
 #define PACKET_INTERVAL     (uint32_t)(4000000*0.5f) /* Set packet interval to 500ms */
@@ -88,7 +79,7 @@ PIN_Config buttonPinTable[] = {
 
 /***** Prototypes *****/
 static void txTaskFunction(UArg arg0, UArg arg1);
-
+static void ledTaskFunction(UArg arg0, UArg arg1);
 
 
 /***** Variable declarations *****/
@@ -96,13 +87,15 @@ static Task_Params txTaskParams;
 Task_Struct txTask;    /* not static so you can see in ROV */
 static uint8_t txTaskStack[TX_TASK_STACK_SIZE];
 
+static Task_Params ledTaskParams;
+Task_Struct ledTask;
+static uint8_t ledTaskStack[LED_TASK_STACK_SIZE];
+
 static RF_Object rfObject;
 static RF_Handle rfHandle;
 
 uint32_t time;
 static uint8_t packet[PAYLOAD_LENGTH];
-//static uint16_t seqNumber;
-static PIN_Handle pinHandle;
 
 static uint8_t pktData = 0x00;      /* Packet Data, 
                                        button0 pressed   = 0xAA, led0   blink on both transmitter and receiver
@@ -110,10 +103,8 @@ static uint8_t pktData = 0x00;      /* Packet Data,
                                        no button pressed = 0x00, led0&1 blink on both transmitter and receiver
                                     */
 /***** Function definitions *****/
-void TxTask_init(PIN_Handle inPinHandle)
+void TxTask_init(void)
 {
-    pinHandle = inPinHandle;
-
     Task_Params_init(&txTaskParams);
     txTaskParams.stackSize = TX_TASK_STACK_SIZE;
     txTaskParams.priority = TX_TASK_PRIORITY;
@@ -121,6 +112,16 @@ void TxTask_init(PIN_Handle inPinHandle)
     txTaskParams.arg0 = (UInt)1000000;
 
     Task_construct(&txTask, txTaskFunction, &txTaskParams, NULL);
+}
+
+void LedTask_init(uint16_t update_interval)
+{
+    Task_Params_init(&ledTaskParams);
+    ledTaskParams.stackSize = LED_TASK_STACK_SIZE;
+    ledTaskParams.stack = &ledTaskStack;
+    ledTaskParams.arg0 = update_interval;
+
+    Task_construct(&ledTask, ledTaskFunction, &ledTaskParams, NULL);
 }
 
 static void txTaskFunction(UArg arg0, UArg arg1)
@@ -165,27 +166,91 @@ static void txTaskFunction(UArg arg0, UArg arg1)
             /* Error */
             while(1);
         }
+    }
+}
 
-        if(tx_byte == 0x00)
+/*
+ *  ======== ledTaskFunction ========
+ *  Task periodically increments the PWM duty for the on board LED.
+ */
+Void ledTaskFunction(UArg arg0, UArg arg1)
+{
+    PWM_Handle pwm1, pwm2;
+    PWM_Params params;
+    uint16_t   pwmPeriod = 5000;      // Period and duty in microseconds
+    uint16_t   duty = 0;
+    uint16_t   dutyInc = 5;
+    int8_t     dir = 1;
+
+    /* Turn on user LED */
+    GPIO_write(Board_LED0, Board_LED_ON);
+    GPIO_write(Board_LED1, Board_LED_ON);
+
+    PWM_Params_init(&params);
+    params.dutyUnits = PWM_DUTY_US;
+    params.dutyValue = 0;
+    params.periodUnits = PWM_PERIOD_US;
+    params.periodValue = pwmPeriod;
+    pwm1 = PWM_open(Board_PWM0, &params);
+    pwm2 = PWM_open(Board_PWM1, &params);
+
+    if (pwm1 == NULL) {
+        System_abort("Board_PWM0 did not open");
+    }
+
+    if (pwm2 == NULL) {
+        System_abort("Board_PWM1 did not open");
+    }
+    PWM_start(pwm1);
+    PWM_start(pwm2);
+    /* Loop forever incrementing the PWM duty */
+    while (1) {
+
+        if(pktData == 0x00)
         {
-            PIN_setOutputValue(pinHandle, Board_LED0,!PIN_getOutputValue(Board_LED0));
-            PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+            PWM_setDuty(pwm1, duty);
+            PWM_setDuty(pwm2, duty);
         }
-        else if(tx_byte == 0xAA)
+        else if(pktData == 0xAA)
         {
-            PIN_setOutputValue(pinHandle, Board_LED0,!PIN_getOutputValue(Board_LED0));
-            PIN_setOutputValue(pinHandle, Board_LED1,0);
+            PWM_setDuty(pwm1, duty);
+            PWM_setDuty(pwm2, 0);
         }
-        else if(tx_byte == 0x55)
+        else if(pktData == 0x55)
         {
-            PIN_setOutputValue(pinHandle, Board_LED0,0);
-            PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+            PWM_setDuty(pwm1, 0);
+            PWM_setDuty(pwm2, duty);
         }
         else
         {
-            PIN_setOutputValue(pinHandle, Board_LED0,0);
-            PIN_setOutputValue(pinHandle, Board_LED1,0);
+            PWM_setDuty(pwm1, 0);
+            PWM_setDuty(pwm2, 0);
         }
+        
+        if(dir > 0)
+        {
+            if(duty + dutyInc >= pwmPeriod)
+            {
+                dir = ~dir;
+            }
+            else
+            {
+                duty += dutyInc;
+            }
+        }
+        else if(dir < 0)
+        {
+            if(duty <= dutyInc)
+            {
+                dir = ~dir;
+            }
+            else
+            {
+                duty -= dutyInc;
+            }
+        }
+
+        Task_sleep((UInt) arg0);
     }
 }
 
@@ -229,13 +294,8 @@ int main(void)
 {
     /* Call board init functions. */
     Board_initGeneral();
-
-    /* Open LED pins */
-    ledPinHandle = PIN_open(&ledPinState, ledPinTable);
-    if(!ledPinHandle)
-    {
-        System_abort("Error initializing board LED pins\n");
-    }
+    Board_initGPIO();
+    Board_initPWM();
 
     buttonPinHandle = PIN_open(&buttonPinState, buttonPinTable);
     if(!buttonPinHandle) {
@@ -248,7 +308,8 @@ int main(void)
     }
 
     /* Initialize task */
-    TxTask_init(ledPinHandle);
+    TxTask_init();
+    LedTask_init(50);
 
     /* Start BIOS */
     BIOS_start();
