@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=1828470361
+Checksum=-584985366
 [CodeCoverage]
 Enabled=_ 0
 [Stack]
@@ -40,6 +40,23 @@ CStepIntDis=_ 0
 LeaveTargetRunning=_ 0
 xdsResetStyle=0
 xdsResetStrategy=3
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=48000000
+ClockAutoDetect=0
+ClockWanted=1000000
+JtagSpeed=1048951
+Prescaler=46
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
 [Trace2]
 Enabled=0
 ShowSource=0
@@ -97,23 +114,6 @@ Exclusions=
 Enabled=0
 [CallStackStripe]
 ShowTiming=1
-[SWOTraceHWSettings]
-OverrideDefaultClocks=0
-CpuClock=48000000
-ClockAutoDetect=0
-ClockWanted=1000000
-JtagSpeed=1048951
-Prescaler=46
-TimeStampPrescIndex=0
-TimeStampPrescData=0
-PcSampCYCTAP=1
-PcSampPOSTCNT=15
-PcSampIndex=0
-DataLogMode=0
-ITMportsEnable=0
-ITMportsTermIO=0
-ITMportsLogFile=0
-ITMlogFile=$PROJ_DIR$\ITM.log
 [Disassemble mode]
 mode=0
 [Breakpoints2]

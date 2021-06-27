@@ -60,9 +60,10 @@ static PIN_State ledPinState;
  * Application LED pin configuration table:
  *   - All LEDs board LEDs are off.
  */
-PIN_Config pinTable[] =
+PIN_Config ledPinTable[] =
 {
-    Board_LED2 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
+    Board_LED0 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
+    Board_LED1 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
     PIN_TERMINATE
 };
 
@@ -177,7 +178,7 @@ void callback(RF_Handle h, RF_CmdHandle ch, RF_EventMask e)
     if (e & RF_EventRxEntryDone)
     {
         /* Toggle pin to indicate RX */
-        PIN_setOutputValue(pinHandle, Board_LED2,!PIN_getOutputValue(Board_LED2));
+        //PIN_setOutputValue(pinHandle, Board_LED2,!PIN_getOutputValue(Board_LED2));
 
         /* Get current unhandled data entry */
         currentDataEntry = RFQueue_getDataEntry();
@@ -192,6 +193,27 @@ void callback(RF_Handle h, RF_CmdHandle ch, RF_EventMask e)
         memcpy(packet, packetDataPointer, (packetLength + 1));
 
         RFQueue_nextEntry();
+
+        if(packet[0] == 0x00)
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,!PIN_getOutputValue(Board_LED0));
+            PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+        }
+        else if(packet[0] == 0xAA)
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,!PIN_getOutputValue(Board_LED0));
+            PIN_setOutputValue(pinHandle, Board_LED1,0);
+        }
+        else if(packet[0] == 0x55)
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,0);
+            PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+        }
+        else
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,0);
+            PIN_setOutputValue(pinHandle, Board_LED1,0);
+        }
     }
 }
 
@@ -204,7 +226,7 @@ int main(void)
     Board_initGeneral();
 
     /* Open LED pins */
-    ledPinHandle = PIN_open(&ledPinState, pinTable);
+    ledPinHandle = PIN_open(&ledPinState, ledPinTable);
     if(!ledPinHandle)
     {
         System_abort("Error initializing board LED pins\n");

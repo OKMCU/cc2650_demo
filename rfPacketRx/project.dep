@@ -6,6 +6,131 @@
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\ITimer.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\ioc.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Swi.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Task__epilogue.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Log.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Queue.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Text.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Clock.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\package\package.defs.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\rf\RF.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Semaphore.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Event.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\package\Clock_TimerProxy.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\package\Task_SupportProxy.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Event__prologue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Event__epilogue.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_common_cmd.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_mailbox.h</file>
+      <file>$PROJ_DIR$\configPkg\package\cfg\project_prm3.orm3</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_prop_cmd.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\PIN.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_prop_mailbox.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\Power.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\rf\lib\rf_singleMode_cc26xxware.arm3</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_memmap.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_ioc.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_ints.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\utils\List.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\interrupt.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_nvic.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\debug.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\cpu.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_cpu_scs.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rom.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\gpio.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_gpio.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_data_entry.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\IHwi.h</file>
+      <file>$PROJ_DIR$\configPkg\linker.cmd</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\UART.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\rom\cortexm\cc26xx\golden\CC26xx\TIRTOS_ROM.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\smartrf_settings.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\lib\display.arm3</file>
+      <file>$PROJ_DIR$\Debug\Obj\RFQueue.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\ccfg.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\rfPacketRx.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\CC2650_LAUNCHXL.__cstat.et</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IHeap.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IInstance.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IModule.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\Hwi__prologue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\Hwi.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\PWM.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\event.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\package\package.defs.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_event.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\Hwi__epilogue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\pin\PINCC26XX.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\timer.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_gpt.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\pwm\PWMTimerCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\timer\GPTimerCC26XX.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\udma.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_udma.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\uart.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_uart.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\power\PowerCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\SPI.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\uart\UARTCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\I2C.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\utils\RingBuf.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\crypto.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_crypto.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\dma\UDMACC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\spi\SPICC26XXDMA.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\i2c\I2CCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\grlib\grlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\crypto\CryptoCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\ADCBuf.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\Display.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\aux_adc.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\DisplaySharp.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\project.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\smartrf_settings.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\RFQueue.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ccfg.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\rfPacketRx.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\CC2650_LAUNCHXL.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\smartrf_settings.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\RFQueue.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\project.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\rfPacketRx.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\CC2650_LAUNCHXL.o</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\System_SupportProxy.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\Main_Module_GateProxy.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Error.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ccfg.o</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\System.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Main.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Log__prologue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\ITaskSupport.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Assert__prologue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\BIOS.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\package\package.defs.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\Memory_HeapProxy.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Diags__prologue.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Memory.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Assert__epilogue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\package\BIOS_RtsGateProxy.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Assert.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Diags__epilogue.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Diags.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\ISystemSupport.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\System_Module_GateProxy.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\BIOS__prologue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\BIOS__epilogue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Task.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Task__prologue.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\package\package.defs.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Log__epilogue.h</file>
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IGateProvider.h</file>
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Error__epilogue.h</file>
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Error__prologue.h</file>
@@ -13,10 +138,10 @@
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Types.h</file>
       <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\rf_patches\rf_patch_mce_genfsk.h</file>
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Types__epilogue.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\cfg\global.h</file>
-      <file>$PROJ_DIR$\configPkg\package\cfg\project_prm3.h</file>
       <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_ccfg_simple_struct.h</file>
       <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_ccfg.h</file>
+      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\cfg\global.h</file>
+      <file>$PROJ_DIR$\configPkg\package\cfg\project_prm3.h</file>
       <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_chip_def.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
       <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_types.h</file>
@@ -37,207 +162,81 @@
       <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\iar\targets\arm\M3.h</file>
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Types__prologue.h</file>
       <file>$PROJ_DIR$\configPkg\package.mak</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_adi.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_adi_4_aux.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\DisplayUart.h</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_aux_anaif.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\adcbuf\ADCBufCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\ADC.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\lib\drivers_cc26xxware.arm3</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\lib\power_cc26xx_tirtos.arm3</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\pdm\lib\pdm_cc26xxware.arm3</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\adc\ADCCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\Watchdog.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\watchdog\WatchdogCC26XX.h</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\lcd\lib\lcd.arm3</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\grlib\lib\grlib.arm3</file>
+      <file>$PROJ_DIR$\src\sysbios\rom_sysbios.arm3</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\bin\iar\driverlib.lib</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\fatfs\lib\release\ti.mw.fatfs.arm3</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\ports\lib\tirtosport.arm3</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\iar\targets\arm\rts\lib\release\boot.arm3</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\Debug\List\project.map</file>
+      <file>$PROJ_DIR$\Debug\Exe\rxPacketRx.hex</file>
+      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\startup_files\ccfg.c</file>
       <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\package.defs.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\startup_files\ccfg.c</file>
       <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\rf_patches\rf_patch_rfe_genfsk.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\project.pbd</file>
-      <file>$PROJ_DIR$\Debug\Obj\smartrf_settings.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\RFQueue.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\ccfg.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\rfPacketRx.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\CC2650_LAUNCHXL.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\smartrf_settings.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\RFQueue.o</file>
-      <file>$PROJ_DIR$\Debug\Exe\project.out</file>
-      <file>$PROJ_DIR$\Debug\Obj\rfPacketRx.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\CC2650_LAUNCHXL.o</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\System_SupportProxy.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ccfg.o</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\System.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\Main_Module_GateProxy.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Error.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Main.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Log__prologue.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Assert__prologue.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\Memory_HeapProxy.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Diags__prologue.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Memory.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Assert__epilogue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\BIOS.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Assert.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Diags__epilogue.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Diags.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\ISystemSupport.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\package\System_Module_GateProxy.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\BIOS__prologue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\package\package.defs.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\package\BIOS_RtsGateProxy.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\BIOS__epilogue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Task.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Task__prologue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\package\package.defs.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Log__epilogue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\ITaskSupport.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\ioc.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\ITimer.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Log.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Queue.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\Text.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Clock.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\package\package.defs.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Swi.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Task__epilogue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\rf\RF.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\package\Clock_TimerProxy.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\package\Task_SupportProxy.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Semaphore.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Event.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Event__prologue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\knl\Event__epilogue.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_common_cmd.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_mailbox.h</file>
-      <file>$PROJ_DIR$\configPkg\package\cfg\project_prm3.orm3</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_prop_cmd.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\PIN.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_prop_mailbox.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\Power.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\rf\lib\rf_singleMode_cc26xxware.arm3</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_memmap.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\utils\List.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_ioc.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_ints.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\interrupt.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_nvic.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\debug.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\cpu.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_cpu_scs.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rom.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\gpio.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_gpio.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\rf_data_entry.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\interfaces\IHwi.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\rom\cortexm\cc26xx\golden\CC26xx\TIRTOS_ROM.icf</file>
-      <file>$PROJ_DIR$\configPkg\linker.cmd</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\UART.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\lib\display.arm3</file>
-      <file>$PROJ_DIR$\project.cfg</file>
       <file>$PROJ_DIR$\Board.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\RFQueue.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\smartrf_settings.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\ccfg.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\rfPacketRx.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\CC2650_LAUNCHXL.__cstat.et</file>
-      <file>$PROJ_DIR$\RFQueue.h</file>
-      <file>$PROJ_DIR$\README.html</file>
-      <file>$PROJ_DIR$\ccfg.c</file>
+      <file>$PROJ_DIR$\project.cfg</file>
       <file>$PROJ_DIR$\CC2650_LAUNCHXL.h</file>
+      <file>$PROJ_DIR$\RFQueue.h</file>
+      <file>$PROJ_DIR$\ccfg.c</file>
       <file>$PROJ_DIR$\smartrf_settings\smartrf_settings.h</file>
       <file>$PROJ_DIR$\CC2650_LAUNCHXL.c</file>
       <file>$PROJ_DIR$\project_CC2650_LAUNCHXL.icf</file>
       <file>$PROJ_DIR$\rfPacketRx.c</file>
       <file>$PROJ_DIR$\RFQueue.c</file>
       <file>$PROJ_DIR$\smartrf_settings\smartrf_settings.c</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IHeap.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IInstance.h</file>
-      <file>c:\ti\xdctools_3_32_00_06_core\packages\xdc\runtime\IModule.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\Hwi__prologue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\Hwi.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\package\package.defs.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\PWM.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\ti\sysbios\family\arm\m3\Hwi__epilogue.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\pin\PINCC26XX.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\event.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_event.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\pwm\PWMTimerCC26XX.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\timer\GPTimerCC26XX.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\timer.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_gpt.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\udma.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_udma.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\power\PowerCC26XX.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\uart.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\uart\UARTCC26XX.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_uart.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\utils\RingBuf.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\SPI.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\I2C.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\dma\UDMACC26XX.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\spi\SPICC26XXDMA.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\crypto.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\i2c\I2CCC26XX.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_crypto.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\crypto\CryptoCC26XX.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\grlib\grlib.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\Display.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\DisplaySharp.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\ADCBuf.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\aux_adc.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\display\DisplayUart.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_adi.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\adcbuf\ADCBufCC26XX.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_adi_4_aux.h</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\inc\hw_aux_anaif.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\ADC.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\lib\drivers_cc26xxware.arm3</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\adc\ADCCC26XX.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\Watchdog.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\watchdog\WatchdogCC26XX.h</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\lcd\lib\lcd.arm3</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\grlib\lib\grlib.arm3</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\lib\power_cc26xx_tirtos.arm3</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\pdm\lib\pdm_cc26xxware.arm3</file>
-      <file>$PROJ_DIR$\src\sysbios\rom_sysbios.arm3</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\mw\fatfs\lib\release\ti.mw.fatfs.arm3</file>
-      <file>c:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\cc26xxware_2_24_03_17272\driverlib\bin\iar\driverlib.lib</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\tidrivers_cc13xx_cc26xx_2_21_01_01\packages\ti\drivers\ports\lib\tirtosport.arm3</file>
-      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>C:\ti\tirtos_cc13xx_cc26xx_2_21_01_08\products\bios_6_46_01_38\packages\iar\targets\arm\rts\lib\release\boot.arm3</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-      <file>$PROJ_DIR$\Debug\List\project.map</file>
-      <file>$PROJ_DIR$\Debug\Exe\rxPacketRx.hex</file>
     </outputs>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 43 195</file>
-        </tool>
-      </outputs>
-    </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\project.out</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 195</file>
+          <file> 179</file>
         </tool>
         <tool>
           <name>OBJCOPY</name>
-          <file> 196</file>
+          <file> 180</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 114 131 113 45 47 44 42 41 91 116 182 183 98 178 184 185 187 189 186 191 188 190 192 193 194</file>
+          <file> 40 192 42 97 101 96 94 93 18 45 168 169 25 162 163 164 173 175 170 177 171 172 174 176 178</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 95 179</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\project.cfg</name>
       <outputs>
         <tool>
           <name>CUSTOM</name>
-          <file> 30</file>
+          <file> 155</file>
         </tool>
       </outputs>
     </file>
@@ -245,26 +244,26 @@
       <name>$PROJ_DIR$\ccfg.c</name>
       <outputs>
         <tool>
-          <name>__cstat</name>
-          <file> 122</file>
+          <name>ICCARM</name>
+          <file> 101</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
+          <name>__cstat</name>
           <file> 47</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38</file>
+          <file> 90</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 22 33 21 20 19 18 17 16 15 14 13 12 11 10 9</file>
+          <file> 147 181 146 145 144 143 142 141 140 139 138 137 136 133 132</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 14 15 9 12 13 20 18 19 21 10 17 16 11 33</file>
+          <file> 139 140 132 137 138 145 143 144 146 133 142 141 136 181</file>
         </tool>
       </inputs>
     </file>
@@ -272,22 +271,22 @@
       <name>$PROJ_DIR$\CC2650_LAUNCHXL.c</name>
       <outputs>
         <tool>
-          <name>__cstat</name>
-          <file> 124</file>
+          <name>ICCARM</name>
+          <file> 97</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 45</file>
+          <name>__cstat</name>
+          <file> 49</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 40</file>
+          <file> 92</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 22 24 26 20 19 18 17 16 15 14 25 27 28 21 48 3 4 29 31 6 137 135 136 50 2 51 0 49 1 56 54 59 53 61 55 60 57 62 46 63 139 138 141 75 52 77 71 58 64 65 66 67 112 79 143 95 12 144 73 13 11 99 101 102 103 104 105 106 107 108 109 110 140 142 147 148 145 146 149 150 97 100 153 78 70 74 76 80 83 151 152 118 128 115 155 157 154 156 85 68 69 72 84 81 86 87 88 160 161 158 163 159 165 162 164 82 89 90 92 93 94 167 169 166 168 172 170 174 171 173 175 176 177 179 180 181</file>
+          <file> 147 149 151 145 144 143 142 141 140 139 150 152 153 146 102 128 129 154 182 131 52 50 51 100 127 103 125 99 126 111 109 114 106 116 110 115 112 117 98 118 54 53 58 4 104 6 124 107 119 108 113 120 39 8 60 22 137 61 1 138 136 26 27 28 30 31 32 33 34 35 36 37 55 56 64 65 57 59 62 63 24 29 70 7 123 0 5 2 12 66 67 185 187 41 72 74 68 69 10 121 122 105 13 3 11 14 15 77 78 71 79 73 82 75 76 9 16 17 19 20 21 84 86 80 81 158 83 160 85 156 157 159 161 165 166 167</file>
         </tool>
       </inputs>
     </file>
@@ -295,26 +294,26 @@
       <name>$PROJ_DIR$\rfPacketRx.c</name>
       <outputs>
         <tool>
-          <name>__cstat</name>
-          <file> 123</file>
+          <name>ICCARM</name>
+          <file> 96</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 44</file>
+          <name>__cstat</name>
+          <file> 48</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 39</file>
+          <file> 91</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 22 32 20 19 18 17 16 15 14 25 24 26 27 28 21 7 8 48 3 4 29 31 6 137 135 136 50 2 51 0 49 1 56 54 59 53 61 55 60 57 62 46 63 58 64 65 66 67 68 69 70 75 52 77 71 76 72 79 78 74 80 83 84 81 82 12 85 86 87 88 89 90 92 93 94 95 96 118 97 100 128 73 13 11 99 101 102 103 104 105 106 107 108 109 110 125 111 129</file>
+          <file> 147 183 145 144 143 142 141 140 139 150 149 151 152 153 146 134 135 102 128 129 154 182 131 52 50 51 100 127 103 125 99 126 111 109 114 106 116 110 115 112 117 98 118 107 119 108 113 120 121 122 123 4 104 6 124 5 105 8 7 0 2 12 13 3 9 137 10 11 14 15 16 17 19 20 21 22 23 185 24 29 187 1 138 136 26 27 28 30 31 32 33 34 35 36 37 188 38 190</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 67 81 31 4 136 21 25 24 56 3 94 96 46 137 55 66 135 20 99 90 58 32 14 19 51 57 61 0 50 78 76 100 7 82 125 119 28 8 62 63 2 53 60 65 69 84 79 70 59 93 89 105 13 48 68 95 118 129 15 18 17 16 26 27 29 6 1 49 54 64 75 72 77 71 83 85 87 128 73 102 108 11 12 107 110 52 74 80 86 88 92 97 101 103 109 104 106 111</file>
+          <file> 128 52 129 119 51 146 21 23 140 152 118 149 182 5 145 26 17 107 183 142 114 98 154 131 50 126 116 103 13 7 29 134 9 188 144 143 141 151 125 100 99 109 117 113 108 123 4 105 8 20 16 32 138 102 121 22 185 190 150 139 44 153 135 111 127 106 112 110 115 120 122 3 6 124 12 10 14 187 1 28 35 136 137 34 37 104 0 2 11 15 19 24 27 30 36 31 33 38</file>
         </tool>
       </inputs>
     </file>
@@ -322,26 +321,26 @@
       <name>$PROJ_DIR$\RFQueue.c</name>
       <outputs>
         <tool>
-          <name>__cstat</name>
-          <file> 120</file>
+          <name>ICCARM</name>
+          <file> 94</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 42</file>
+          <name>__cstat</name>
+          <file> 46</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 37</file>
+          <file> 89</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 22 21 20 19 18 17 16 15 14 32 25 125 111 90 92 93</file>
+          <file> 147 146 145 144 143 142 141 140 139 183 150 188 38 17 19 20</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 20 25 90 125 19 16 111 32 17 21 18 15 14 92 93</file>
+          <file> 145 150 17 188 144 141 38 183 142 146 143 140 139 19 20</file>
         </tool>
       </inputs>
     </file>
@@ -349,26 +348,26 @@
       <name>$PROJ_DIR$\smartrf_settings\smartrf_settings.c</name>
       <outputs>
         <tool>
-          <name>__cstat</name>
-          <file> 121</file>
+          <name>ICCARM</name>
+          <file> 93</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 41</file>
+          <name>__cstat</name>
+          <file> 43</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 36</file>
+          <file> 88</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 22 90 21 20 19 18 17 16 15 14 92 25 93 89 94 82 12 58 24 26 27 28 3 4 29 31 6 64 65 50 2 51 137 135 136 56 54 0 49 1 66 67 78 70 59 53 61 55 60 57 75 52 77 71 74 79 76 80 83 85 68 69 72 84 81 86 87 88 23 34 13 11 5 129</file>
+          <file> 147 17 146 145 144 143 142 141 140 139 19 150 20 16 21 9 137 107 149 151 152 153 128 129 154 182 131 119 108 100 127 103 52 50 51 111 109 125 99 126 113 120 7 123 114 106 116 110 115 112 4 104 6 124 0 8 5 2 12 10 121 122 105 13 3 11 14 15 148 184 138 136 130 190</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 71 1 20 68 21 3 137 26 24 15 17 75 77 136 12 90 23 93 65 4 74 94 5 92 18 16 25 78 0 19 28 29 6 31 80 57 60 70 59 72 79 61 13 89 82 34 129 14 67 27 49 50 53 55 51 76 84 88 58 85 64 66 119 2 135 56 54 83 52 86 69 81 87 11</file>
+          <file> 124 126 145 121 146 128 52 151 149 140 142 4 6 51 137 17 148 20 108 129 0 21 130 19 143 141 150 7 125 144 153 154 131 182 2 112 115 123 114 105 8 116 138 16 9 184 190 139 120 152 99 100 106 110 103 5 13 15 107 10 119 113 44 127 50 111 109 12 104 11 122 3 14 136</file>
         </tool>
       </inputs>
     </file>
@@ -377,12 +376,12 @@
     <name>Release</name>
     <outputs/>
     <forcedrebuild>
-      <name>$PROJ_DIR$\project.cfg</name>
-      <tool>CUSTOM</tool>
-    </forcedrebuild>
-    <forcedrebuild>
       <name>[MULTI_TOOL]</name>
       <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\project.cfg</name>
+      <tool>CUSTOM</tool>
     </forcedrebuild>
   </configuration>
 </project>
