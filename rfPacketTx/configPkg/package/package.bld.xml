@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="GBK"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/project_prm3.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="D:/Workspace/Projects/cc2650_demo/rfPacketTx/project.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/project_prm3.mak" src="package.bld"/>
+        <srcFile name="package/cfg/project_prm3.orm3.dep" src="package/cfg/project_prm3.c"/>
+        <srcFile name="package/cfg/project_prm3.dep" src="package/cfg/project_prm3.cfg"/>
+        <srcFile name="package/cfg/project.xrm3.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="iar.targets.arm.M3"
+            version="iar.targets.arm.M3{1,0,7.70,1"
+            rawVersion="7.70.1.11437"
+            platform="ti.platforms.tiva:TM4C1294NCPDT:1"
+            isa="v7M"
+            suffix="rm3"
+            rootDir="C:/PROGRA~2/IARSYS~1/EMBEDD~1.5/arm"
+            os="undefined"
+            rts="iar.targets.arm.rts">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="project"
+        pname="project.prm3"
+        target="iar.targets.arm.M3"
+        platform="ti.platforms.simplelink:CC2650F128"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/project_prm3.cfg"
+        xCfgPrefix="package/cfg/project_prm3"
+        cfgScript="D:/Workspace/Projects/cc2650_demo/rfPacketTx/project.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="project"
+        pname="project.xrm3"
+        target="iar.targets.arm.M3"
+        platform="ti.platforms.simplelink:CC2650F128"
+        profile="release"
+        xCfgScript="package/cfg/project_prm3.cfg"
+        xCfgPrefix="package/cfg/project_prm3"
+        cfgScript="D:/Workspace/Projects/cc2650_demo/rfPacketTx/project.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="project.xrm3"
+        args=""
+        groupName="project.xrm3"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
