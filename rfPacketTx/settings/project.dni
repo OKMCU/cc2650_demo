@@ -16,7 +16,7 @@ xds110foundProbes=
 xdsResetStyle=0
 xdsResetStrategy=3
 [DebugChecksum]
-Checksum=-1936958120
+Checksum=1653466998
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -43,6 +43,20 @@ ITMportsEnable=0
 ITMportsTermIO=0
 ITMportsLogFile=0
 ITMlogFile=$PROJ_DIR$\ITM.log
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
 [Trace2]
 Enabled=0
 ShowSource=0
@@ -55,6 +69,12 @@ EventEXC=0
 EventFOLD=0
 EventLSU=0
 EventSLEEP=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
 [EventLog]
 Title_0=Ch3
 Symbol_0=0 4 1
@@ -64,6 +84,13 @@ Title_2=Ch1
 Symbol_2=0 4 1
 Title_3=Ch0
 Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
 LogEnabled=0
 GraphEnabled=0
 ShowTimeLog=1
@@ -87,33 +114,6 @@ Exclusions=
 Enabled=0
 [CallStackStripe]
 ShowTiming=1
-[InterruptLog]
-LogEnabled=0
-GraphEnabled=0
-ShowTimeLog=1
-SumEnabled=0
-ShowTimeSum=1
-SumSortOrder=0
-[DataLog]
-LogEnabled=0
-GraphEnabled=0
-ShowTimeLog=1
-SumEnabled=0
-ShowTimeSum=1
-[Interrupts]
-Enabled=1
-[MemConfig]
-Base=1
-Manual=0
-Ddf=1
-TypeViol=0
-Stop=1
-[Trace1]
-Enabled=0
-ShowSource=1
-[Simulator]
-Freq=10000000
-MultiCoreRunAll=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]

@@ -47,20 +47,34 @@
 
 #include "smartrf_settings/smartrf_settings.h"
 
-/* Pin driver handle */
+/* Pin driver handles */
+static PIN_Handle buttonPinHandle;
 static PIN_Handle ledPinHandle;
+
+/* Global memory storage for a PIN_Config table */
+static PIN_State buttonPinState;
 static PIN_State ledPinState;
 
 /*
- * Application LED pin configuration table:
- *   - All LEDs board LEDs are off.
+ * Initial LED pin configuration table
+ *   - LEDs Board_LED0 is on.
+ *   - LEDs Board_LED1 is off.
  */
-PIN_Config pinTable[] =
-{
-    Board_LED1 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
+PIN_Config ledPinTable[] = {
+    Board_LED0 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL | PIN_DRVSTR_MAX,
+    Board_LED1 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL | PIN_DRVSTR_MAX,
     PIN_TERMINATE
 };
 
+/*
+ * Application button pin configuration table:
+ *   - Buttons interrupts are configured to trigger on falling edge.
+ */
+PIN_Config buttonPinTable[] = {
+    Board_BUTTON0  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
+    Board_BUTTON1  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
+    PIN_TERMINATE
+};
 
 /***** Defines *****/
 #define TX_TASK_STACK_SIZE 1024
@@ -87,10 +101,14 @@ static RF_Handle rfHandle;
 
 uint32_t time;
 static uint8_t packet[PAYLOAD_LENGTH];
-static uint16_t seqNumber;
+//static uint16_t seqNumber;
 static PIN_Handle pinHandle;
 
-
+static uint8_t pktData = 0x00;      /* Packet Data, 
+                                       button0 pressed   = 0xAA, led0   blink on both transmitter and receiver
+                                       button1 pressed   = 0x55, led1   blink on both transmitter and receiver
+                                       no button pressed = 0x00, led0&1 blink on both transmitter and receiver
+                                    */
 /***** Function definitions *****/
 void TxTask_init(PIN_Handle inPinHandle)
 {
@@ -108,6 +126,7 @@ void TxTask_init(PIN_Handle inPinHandle)
 static void txTaskFunction(UArg arg0, UArg arg1)
 {
     uint32_t time;
+    uint8_t tx_byte;
     RF_Params rfParams;
     RF_Params_init(&rfParams);
 
@@ -127,13 +146,12 @@ static void txTaskFunction(UArg arg0, UArg arg1)
     time = RF_getCurrentTime();
     while(1)
     {
+        tx_byte = pktData;
         /* Create packet with incrementing sequence number and random payload */
-        packet[0] = (uint8_t)(seqNumber >> 8);
-        packet[1] = (uint8_t)(seqNumber++);
         uint8_t i;
-        for (i = 2; i < PAYLOAD_LENGTH; i++)
+        for (i = 0; i < PAYLOAD_LENGTH; i++)
         {
-            packet[i] = rand();
+            packet[i] = tx_byte;
         }
 
         /* Set absolute TX time to utilize automatic power management */
@@ -148,7 +166,59 @@ static void txTaskFunction(UArg arg0, UArg arg1)
             while(1);
         }
 
-        PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+        if(tx_byte == 0x00)
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,!PIN_getOutputValue(Board_LED0));
+            PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+        }
+        else if(tx_byte == 0xAA)
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,!PIN_getOutputValue(Board_LED0));
+            PIN_setOutputValue(pinHandle, Board_LED1,0);
+        }
+        else if(tx_byte == 0x55)
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,0);
+            PIN_setOutputValue(pinHandle, Board_LED1,!PIN_getOutputValue(Board_LED1));
+        }
+        else
+        {
+            PIN_setOutputValue(pinHandle, Board_LED0,0);
+            PIN_setOutputValue(pinHandle, Board_LED1,0);
+        }
+    }
+}
+
+/*
+ *  ======== buttonCallbackFxn ========
+ *  Pin interrupt Callback function board buttons configured in the pinTable.
+ *  If Board_LED3 and Board_LED4 are defined, then we'll add them to the PIN
+ *  callback function.
+ */
+void buttonCallbackFxn(PIN_Handle handle, PIN_Id pinId) {
+    //uint32_t currVal = 0;
+
+    /* Debounce logic, only toggle if the button is still pushed (low) */
+    CPUdelay(8000*50);
+    if (!PIN_getInputValue(pinId)) {
+        /* Toggle LED based on the button pressed */
+        switch (pinId) {
+            case Board_BUTTON0:
+                //currVal =  PIN_getOutputValue(Board_LED0);
+                //PIN_setOutputValue(ledPinHandle, Board_LED0, !currVal);
+                pktData = 0xAA;
+                break;
+
+            case Board_BUTTON1:
+                //currVal =  PIN_getOutputValue(Board_LED1);
+                //PIN_setOutputValue(ledPinHandle, Board_LED1, !currVal);
+                pktData = 0x55;
+                break;
+
+            default:
+                /* Do nothing */
+                break;
+        }
     }
 }
 
@@ -161,10 +231,20 @@ int main(void)
     Board_initGeneral();
 
     /* Open LED pins */
-    ledPinHandle = PIN_open(&ledPinState, pinTable);
+    ledPinHandle = PIN_open(&ledPinState, ledPinTable);
     if(!ledPinHandle)
     {
         System_abort("Error initializing board LED pins\n");
+    }
+
+    buttonPinHandle = PIN_open(&buttonPinState, buttonPinTable);
+    if(!buttonPinHandle) {
+        System_abort("Error initializing button pins\n");
+    }
+
+    /* Setup callback for button pins */
+    if (PIN_registerIntCb(buttonPinHandle, &buttonCallbackFxn) != 0) {
+        System_abort("Error registering button callback function");
     }
 
     /* Initialize task */
